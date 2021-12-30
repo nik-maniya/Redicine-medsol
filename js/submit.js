@@ -8,13 +8,13 @@ $("#subscribe_submit").click(function(){
             data: {'email': $('#Email-2').val()},
             success: function (response){
                 console.log('Success')
-                $('.w-form-done').show()
-                $('.w-form-fail').hide()
+                $('.submit-success').show()
+                $('.submit-error').hide()
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 console.log('Failed')
-                $('.w-form-done').hide()
-                $('.w-form-fail').show()
+                $('.submit-success').hide()
+                $('.submit-error').show()
             }
         });
     }
