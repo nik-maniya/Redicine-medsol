@@ -5,7 +5,7 @@ include_once('database.php');
 
 $objStmt = $objConn->prepare("INSERT INTO  subscribers (email) VALUES (?)");
 
-$objStmt->bind_param("s", $_REQUEST['Email-2']);
+$objStmt->bind_param("s", $_REQUEST['email']);
 $objStmt->execute();
 
 $objStmt->close();
