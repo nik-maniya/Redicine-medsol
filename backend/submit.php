@@ -9,6 +9,7 @@ $objStmt->bind_param($_REQUEST['Email-2']);
 $objStmt->execute();
 
 $objStmt->close();
+$objConn->close();
 
 ?>
 

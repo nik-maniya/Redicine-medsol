@@ -3,7 +3,7 @@
 include_once('env.php');
 
 // Create connection
-$objConn = new mysqli($strHostname, $strUsername, $strPassword);
+$objConn = new mysqli($strHostname, $strUsername, $strPassword, $strDatabase);
 
 // Check connection
 if ($objConn->connect_error) {
