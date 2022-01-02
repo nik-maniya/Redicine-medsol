@@ -268,11 +268,15 @@
             <p class="para16 white">We would love to have you on board with us! Join us to stay updated about the progress of Redicine.</p>
           </div>
           <div class="emailform w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form"><label for="Email-2" class="field-label">Email</label><input type="email" class="emailfield w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Enter your Email" id="Email-2" required=""><input type="submit" value="Subscribe" data-wait="Please wait..." class="button w-button"></form>
-            <div class="success w-form-done">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form">
+              <label for="Email-2" class="field-label">Email</label>
+              <input type="email" class="emailfield w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Enter your Email" id="Email-2" required="">
+              <input id="subscribe_submit" type="submit" value="Subscribe" data-wait="Please wait..." class="button w-button">
+            </form>
+            <div class="submit-success" style="display: none;">
               <div>Thank you! Your submission has been received!</div>
             </div>
-            <div class="error w-form-fail">
+            <div class="submit-error" style="display: none;">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
           </div>
@@ -364,3 +368,6 @@
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
+
+<script src="js/jquery.js"></script>
+<script src="js/submit.js?version=1"></script>
