@@ -368,19 +368,25 @@ label {
 }
 
 .trustlogowrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   padding-top: 20px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  justify-items: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .steps {
@@ -1717,6 +1723,10 @@ label {
   margin-bottom: 35px;
 }
 
+.support-logowrapper {
+  width: 40%;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 50px;
@@ -2686,6 +2696,14 @@ label {
 
   .calmbody {
     padding-top: 10px;
+  }
+
+  .support-logowrapper {
+    width: 50%;
+  }
+
+  .support-logowrapper-2 {
+    width: 100%;
   }
 }
 
