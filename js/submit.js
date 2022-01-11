@@ -10,11 +10,13 @@ $("#subscribe_submit").click(function(){
                 console.log('Success')
                 $('.submit-success').show()
                 $('.submit-error').hide()
+                $('#email-form').hide()
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 console.log('Failed')
                 $('.submit-success').hide()
                 $('.submit-error').show()
+                $('#email-form').show()
             }
         });
     }
